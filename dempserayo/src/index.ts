@@ -1,4 +1,4 @@
-// Exportar todos los componentes de la librería
+import "./index.css";
 export { Button } from './Button/button'
 export { Tittle } from './Title/title'
 
