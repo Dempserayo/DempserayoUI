@@ -1,6 +1,6 @@
 {
   "name": "dempserayo-ui",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "type": "module",
   "files": ["dist"],
   "main": "./dist/dempserayo-ui.umd.cjs",
