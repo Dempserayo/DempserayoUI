@@ -7,7 +7,7 @@ Tecnologias:
 ##
 ESPAÑOL
 
-Creado en un Principio para reutilizar componentes que ya eh creado con anterioridad en proyectos pasados, en proyectos futuros, sin necesidad de perder tiempo volviendo a escribir o maquetar dichos componentes. Ademas de evitar
+Creado en un Principio para reutilizar componentes que ya eh creado con anterioridad en proyectos, para usarse en proyectos futuros, sin necesidad de perder tiempo volviendo a escribir o maquetar dichos componentes. Ademas de evitar
 utilizar librerias de Componentes de terceros, prefiero utilizar mis propios componentes siempre y cuando la ocasion lo permita.
 
 
