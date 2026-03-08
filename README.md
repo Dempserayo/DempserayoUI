@@ -7,18 +7,20 @@ Tecnologias:
 ##
 ESPAÑOL
 
-Creado en un Principio para reutilizar componentes que ya eh creado con anterioridad en proyectos, para usarse en proyectos futuros, sin necesidad de perder tiempo volviendo a escribir o maquetar dichos componentes. Ademas de evitar
-utilizar librerias de Componentes de terceros, prefiero utilizar mis propios componentes siempre y cuando la ocasion lo permita.
+Esta librería fue creada con el objetivo de reutilizar componentes que he desarrollado previamente en otros proyectos, permitiendo utilizarlos en futuros desarrollos sin tener que invertir tiempo nuevamente en su creación o maquetación.
 
+Además, busca reducir la dependencia de librerías de componentes de terceros, priorizando el uso de componentes propios siempre que la situación lo permita.
 
-Esta Libreria la ire actualizando Todos los fines de semana, agregando poco a poco, los respectivos componentes que deseo utilizar en proyectos Futuros.
+Planeo actualizar esta librería cada fin de semana, agregando progresivamente nuevos componentes que puedan ser útiles en futuros proyectos.
 
 ##
 INGLES
 
-Created initially to reuse components that I have already created in previous projects in future projects, without wasting time rewriting or redesigning those components. In addition to avoiding the use of third-party component libraries, I prefer to use my own components whenever possible.
+This library was created with the aim of reusing components that I have previously developed in other projects, allowing them to be used in future developments without having to invest time again in their creation or layout.
 
-I will update this library every weekend, gradually adding the respective components that I want to use in future projects.
+In addition, it seeks to reduce dependence on third-party component libraries, prioritizing the use of proprietary components whenever the situation allows.
+
+I plan to update this library every weekend, progressively adding new components that may be useful in future projects.
 
 ##
 Version 0.0.2 =>
