@@ -1,7 +1,7 @@
 import { Button } from "../Button/button";
 
 interface NavbarProps {
-  variant?: "primary" | "transparent" | "light";
+  variant?: "primary" | "central_variante_1" | "light";
 }
 
 export default function Navbar({
@@ -9,7 +9,7 @@ export default function Navbar({
 }: NavbarProps) {
   if (variant === "primary") {
     return (
-      <nav className="bg-gray-800 text-white flex items-center justify-between p-8">
+      <nav className="bg-slate-700 text-white flex items-center justify-between p-8">
         <Button variant="outline">Logo</Button>
 
         <section className="flex gap-4">
@@ -22,7 +22,7 @@ export default function Navbar({
     );
   }
 
-  if (variant === "transparent") {
+  if (variant === "central_variante_1") {
     return (
       <nav className="bg-transparent text-neutral-800 flex justify-center items-center gap-10 p-8">
         <div>
@@ -43,18 +43,20 @@ export default function Navbar({
   }
 
   return (
-    <nav className="bg-white text-neutral-800 shadow-md p-8">
-      <div className="flex flex-col items-center gap-6">
-        <Button variant="outline">Logo</Button>
+      <nav className="bg-slate-700 text-neutral-200 flex justify-between items-center gap-10 p-8">
+        <section>
+          <Button variant="outline">Logo</Button>
+        </section>
 
         <section className="flex gap-4">
           <Button variant="neutral">Store</Button>
-          <Button variant="neutral">User</Button>
-          <Button variant="neutral">Settings</Button>
+          <Button variant="neutral">Products</Button>
+          <Button variant="neutral">Contact</Button>
         </section>
 
-        <Button variant="primary">Login</Button>
-      </div>
-    </nav>
+        <section>
+          <Button variant="primary">Login</Button>
+        </section>
+      </nav>
   );
 }
