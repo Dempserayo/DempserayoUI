@@ -1,22 +1,90 @@
-import { Button } from "../Button/button";
+import { FiLogIn, FiLogOut } from "react-icons/fi";
+import { Button } from "../atoms/Button/button";
+import Logo from "../atoms/Logo/logo";
 
 interface NavbarProps {
-  variant?: "primary" | "central_variante_1" | "light";
+  variant?: "variante_1" | "variante_2" | "variante_3" | "central_variante_1" | "light";
 }
 
 export default function Navbar({
-  variant = "primary",
+  variant = "variante_1",
 }: NavbarProps) {
-  if (variant === "primary") {
+  if (variant === "variante_1") {
     return (
-      <nav className="bg-slate-700 text-white flex items-center justify-between p-8">
-        <Button variant="outline">Logo</Button>
+      <nav className="w-full max-w-7xl flex justify-between items-center p-8">
+        <section className="w-auto flex gap-2">
+          <Logo/>
+        </section>
 
-        <section className="flex gap-4">
-          <Button variant="neutral">Store</Button>
-          <Button variant="neutral">User</Button>
-          <Button variant="neutral">Settings</Button>
-          <Button variant="neutral">Login</Button>
+        <section className="w-full flex justify-center items-center gap-2">
+          <Button variant="button_variante_1">Store</Button>
+          <Button variant="button_variante_1">Categories</Button>
+          <Button variant="button_variante_1">Options</Button>
+          <Button variant="button_variante_1">Configuration</Button>
+        </section>
+
+        <section className="w-auto flex gap-2">
+          <Button variant="button_variante_1">
+            Login
+            <FiLogIn />
+          </Button>
+
+          <Button variant="button_variante_1">
+            Register
+            <FiLogOut />
+          </Button>
+        </section>
+      </nav>
+    );
+  }
+
+  if (variant === "variante_2") {
+    return (
+      <nav className="w-full max-w-7xl flex justify-between items-center p-8">
+        <section className="w-auto flex gap-2">
+          <Logo/>
+        </section>
+
+        <section className="w-full flex justify-center items-center">
+          <Button variant="button_variante_2">Store</Button>
+          <Button variant="button_variante_2">Categories</Button>
+          <Button variant="button_variante_2">Options</Button>
+        </section>
+
+        <section className="w-auto flex">
+          <Button variant="button_variante_2">
+            Login
+            <FiLogIn />
+          </Button>
+          <Button variant="button_variante_2">
+            Register
+            <FiLogOut />
+          </Button>
+        </section>
+      </nav>
+    );
+  }
+
+  if (variant === "variante_3") {
+    return (
+      <nav className="w-full max-w-7xl flex justify-between items-center p-8">
+        <section className="w-auto flex gap-2">
+          <Logo/>
+        </section>
+
+
+        <section className="w-auto flex">
+          <Button variant="button_variante_3">Store</Button>
+          <Button variant="button_variante_3">Categories</Button>
+          <Button variant="button_variante_3">Options</Button>
+          
+          <Button variant="button_variante_3">
+            <FiLogIn />
+          </Button>
+
+          <Button variant="button_variante_2">
+            <FiLogOut />
+          </Button>
         </section>
       </nav>
     );
@@ -24,38 +92,36 @@ export default function Navbar({
 
   if (variant === "central_variante_1") {
     return (
-      <nav className="bg-transparent text-neutral-800 flex justify-center items-center gap-10 p-8">
-        <div>
-          <Button variant="outline">Logo</Button>
-        </div>
+      <nav className="w-full max-w-7xl  bg-transparent text-neutral-800 flex justify-center items-center gap-10 p-4 border border-neutral-300">
+        <Logo/>
 
-        <div className="flex gap-4">
-          <Button variant="neutral">Store</Button>
-          <Button variant="neutral">Products</Button>
-          <Button variant="neutral">Contact</Button>
+        <div className="flex gap-2">
+          <Button variant="button_variante_2">Store</Button>
+          <Button variant="button_variante_2">Products</Button>
+          <Button variant="button_variante_2">Contact</Button>
         </div>
 
         <div>
-          <Button variant="primary">Login</Button>
+          <Button variant="button_variante_1">Login</Button>
         </div>
       </nav>
     );
   }
 
   return (
-      <nav className="bg-slate-700 text-neutral-200 flex justify-between items-center gap-10 p-8">
+      <nav className="w-full max-w-7xl bg-slate-700 text-neutral-200 flex justify-between items-center p-8">
         <section>
-          <Button variant="outline">Logo</Button>
+          <Logo/>
         </section>
 
         <section className="flex gap-4">
-          <Button variant="neutral">Store</Button>
-          <Button variant="neutral">Products</Button>
-          <Button variant="neutral">Contact</Button>
+          <Button variant="button_variante_2">Store</Button>
+          <Button variant="button_variante_2">Products</Button>
+          <Button variant="button_variante_2">Contact</Button>
         </section>
 
         <section>
-          <Button variant="primary">Login</Button>
+          <Button variant="button_variante_1">Login</Button>
         </section>
       </nav>
   );

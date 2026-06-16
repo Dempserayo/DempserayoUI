@@ -1,4 +1,4 @@
 import "./index.css";
-export { Button } from './Button/button'
-export { Tittle } from './Title/title'
+export { Button } from './atoms/Button/button'
+export { Tittle } from './atoms/Title/title'
 
