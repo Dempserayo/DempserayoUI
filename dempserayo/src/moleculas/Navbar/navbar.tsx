@@ -13,33 +13,30 @@ export default function Navbar({
 }: NavbarProps) {
   if (variant === "variante_1") {
     return (
-      <nav className="w-full max-w-7xl flex justify-between items-center p-8">
+      <nav className="w-full max-w-7xl flex justify-between items-center p-10">
         <section className="w-auto flex gap-2">
           <Logo/>
         </section>
 
         <section className="w-full flex justify-center items-center gap-2">
-          <Button variant="button_variante_1">
+          <Button variant="button_variante_1" onRoute="/">
             <Text>Document</Text>
           </Button>
-          <Button variant="button_variante_1">
+          <Button variant="button_variante_1" onRoute="/products">
             <Text>Categories</Text>
           </Button>
-          <Button variant="button_variante_1">
-            <Text>Options</Text>
-          </Button>
-          <Button variant="button_variante_1">
+          <Button variant="button_variante_1" onRoute="/configuration">
             <Text>Configuration</Text>
           </Button>
         </section>
 
         <section className="w-auto flex gap-2">
-          <Button variant="button_variante_1">
+          <Button variant="button_variante_1" onRoute="/login">
             <Text>Login</Text>
             <FiLogIn />
           </Button>
 
-          <Button variant="button_variante_1">
+          <Button variant="button_variante_1" onRoute="/register">
             <Text>Register</Text>
             <FiLogOut />
           </Button>
@@ -50,29 +47,29 @@ export default function Navbar({
 
   if (variant === "variante_2") {
     return (
-      <nav className="w-full max-w-7xl flex justify-between items-center p-8">
+      <nav className="w-full max-w-7xl flex justify-between items-center p-10">
         <section className="w-auto flex gap-2">
           <Logo/>
         </section>
 
         <section className="w-full flex justify-center items-center">
-          <Button variant="button_variante_2">
+          <Button variant="button_variante_2" onRoute="/">
             <Text>Store</Text>
           </Button>
-          <Button variant="button_variante_2">
+          <Button variant="button_variante_2" onRoute="/categories">
             <Text>Categories</Text>
           </Button>
-          <Button variant="button_variante_2">
+          <Button variant="button_variante_2" onRoute="/options">
             <Text>Options</Text>
           </Button>
         </section>
 
         <section className="w-auto flex">
-          <Button variant="button_variante_2">
+          <Button variant="button_variante_2" onRoute="/login">
             <Text>Login</Text>
             <FiLogIn />
           </Button>
-          <Button variant="button_variante_2">
+          <Button variant="button_variante_2" onRoute="/register">
             <Text>Register</Text>
             <FiLogOut />
           </Button>
@@ -83,7 +80,7 @@ export default function Navbar({
 
   if (variant === "variante_3") {
     return (
-      <nav className="w-full max-w-7xl flex justify-between items-center p-8">
+      <nav className="w-full max-w-7xl flex justify-between items-center p-10">
         <section className="w-full flex gap-2">
           <Logo/>
         </section>
@@ -94,21 +91,21 @@ export default function Navbar({
         </section>
 
         <section className="w-full flex flex-row justify-end gap-2">
-          <Button variant="button_variante_3">
+          <Button variant="button_variante_3" onRoute="/">
             <Text>Store</Text>
           </Button>
-          <Button variant="button_variante_3">
+          <Button variant="button_variante_3" onRoute="/categories">
             <Text>Categories</Text>
           </Button>
-          <Button variant="button_variante_3">
+          <Button variant="button_variante_3" onRoute="/options">
             <Text>Options</Text>
           </Button>
 
-          <Button variant="button_variante_3">
+          <Button variant="button_variante_3" onRoute="/login">
             <FiLogIn />
           </Button>
 
-          <Button variant="button_variante_3">
+          <Button variant="button_variante_3" onRoute="/register">
             <FiLogOut />
           </Button>
         </section>
@@ -118,31 +115,31 @@ export default function Navbar({
 
   if (variant === "variante_4") {
     return (
-      <nav className="w-full max-w-7xl flex justify-between items-center p-8 ">
+      <nav className="w-full max-w-7xl flex justify-between items-center p-10 ">
         <section className="w-full flex flex-row justify-center items-center gap-8">
           <Logo/>
           <Input variant="input_variante_2" placeholder="Buscar productos" icon={<FiSearch  className="text-xs"/>}/>
         </section>
 
         <section className="w-full flex flex-row justify-end gap-2">
-          <Button variant="button_variante_4">
+          <Button variant="button_variante_4" onRoute="/store">
             <Text>Store</Text>
           </Button>
-          <Button variant="button_variante_4">
+          <Button variant="button_variante_4" onRoute="/document">
             <Text>Document</Text>
           </Button>
-          <Button variant="button_variante_4">
+          <Button variant="button_variante_4" onRoute="/categories">
             <Text>Categories</Text>
           </Button>
-          <Button variant="button_variante_4">
+          <Button variant="button_variante_4" onRoute="/options">
             <Text>Options</Text>
           </Button>
 
-          <Button variant="button_variante_4">
+          <Button variant="button_variante_4" onRoute="/login">
             <FiLogIn />
           </Button>
 
-          <Button variant="button_variante_4">
+          <Button variant="button_variante_4" onRoute="/register">
             <FiLogOut />
           </Button>
         </section>
@@ -152,31 +149,31 @@ export default function Navbar({
 
   if (variant === "variante_5") {
     return (
-      <nav className="w-full max-w-7xl flex justify-between items-center p-8 ">
+      <nav className="w-full max-w-7xl flex justify-between items-center p-10">
         <section className="w-full flex flex-row justify-center items-center gap-8">
           <Logo/>
           <Input variant="input_variante_3" placeholder="Buscar productos" icon={<FiSearch  className="text-xs"/>}/>
         </section>
 
         <section className="w-full flex flex-row justify-end gap-2">
-          <Button variant="button_variante_4">
+          <Button variant="button_variante_4" onRoute="/store">
             <Text>Store</Text>
           </Button>
-          <Button variant="button_variante_4">
+          <Button variant="button_variante_4" onRoute="/document">
             <Text>Document</Text>
           </Button>
-          <Button variant="button_variante_4">
+          <Button variant="button_variante_4" onRoute="/categories">
             <Text>Categories</Text>
           </Button>
-          <Button variant="button_variante_4">
+          <Button variant="button_variante_4" onRoute="/options">
             <Text>Options</Text>
           </Button>
 
-          <Button variant="button_variante_4">
+          <Button variant="button_variante_4" onRoute="/login">
             <FiLogIn />
           </Button>
 
-          <Button variant="button_variante_4">
+          <Button variant="button_variante_4" onRoute="/register">
             <FiLogOut />
           </Button>
         </section>
@@ -186,23 +183,23 @@ export default function Navbar({
 
   if (variant === "central_variante_1") {
     return (
-      <nav className="w-full max-w-7xl  bg-transparent text-neutral-800 flex justify-center items-center gap-10 p-4 border border-neutral-300">
+      <nav className="w-full max-w-7xl  bg-transparent text-neutral-800 flex justify-center items-center gap-10 p-10 border border-neutral-300">
         <Logo/>
 
         <div className="flex gap-2">
-          <Button variant="button_variante_2">
+          <Button variant="button_variante_2" onRoute="/document">
             <Text>Document</Text>
           </Button>
-          <Button variant="button_variante_2">
+          <Button variant="button_variante_2" onRoute="/products">
             <Text>Products</Text>
           </Button>
-          <Button variant="button_variante_2">
+          <Button variant="button_variante_2" onRoute="/contact">
             <Text>Contact</Text>
           </Button>
         </div>
 
         <div>
-          <Button variant="button_variante_1">
+          <Button variant="button_variante_1" onRoute="/login">
             <Text>Login</Text>
           </Button>
         </div>
@@ -211,28 +208,28 @@ export default function Navbar({
   }
 
   return (
-      <nav className="w-full max-w-8xl bg-neutral-200 flex justify-between items-center p-8">
+      <nav className="w-full max-w-7xl flex justify-between items-center p-10">
         <section>
           <Logo/>
         </section>
 
         <section className="flex gap-2">
-          <Button variant="button_variante_2">
+          <Button variant="button_variante_2" onRoute="/store">
             <Text>Store</Text>
           </Button>
-          <Button variant="button_variante_2">
+          <Button variant="button_variante_2" onRoute="/products">
             <Text>Products</Text>
           </Button>
-          <Button variant="button_variante_2">
+          <Button variant="button_variante_2" onRoute="/contact">
             <Text>Contact</Text>
           </Button>
         </section>
 
         <section className="flex gap-2">
-          <Button variant="button_variante_1">
+          <Button variant="button_variante_1" onRoute="/login">
             <Text>Login</Text>
           </Button>
-          <Button variant="button_variante_1">
+          <Button variant="button_variante_1" onRoute="/register">
             <Text>Register</Text>
           </Button>
         </section>

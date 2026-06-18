@@ -1,1 +1,1 @@
-{"root":["./src/index.ts","./src/button/button.tsx","./src/title/title.tsx"],"version":"5.9.3"}
+{"root":["./src/index.ts","./src/main.tsx","./src/atoms/button/button.tsx","./src/atoms/input/input.tsx","./src/atoms/logo/logo.tsx","./src/atoms/text/text.tsx","./src/atoms/title/title.tsx","./src/moleculas/navbar/navbar.tsx"],"version":"5.9.3"}
